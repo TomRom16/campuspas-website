@@ -15,31 +15,37 @@ function setLanguage(lang) {
     el.textContent = el.dataset[lang];
   });
 
-  langSwitch.textContent = isHebrew ? "English" : "עברית";
-  langSwitch.setAttribute(
-    "aria-label",
-    isHebrew ? "Switch to English" : "מעבר לעברית"
-  );
+  if (langSwitch) {
+    langSwitch.textContent = isHebrew ? "English" : "עברית";
+    langSwitch.setAttribute(
+      "aria-label",
+      isHebrew ? "Switch to English" : "מעבר לעברית"
+    );
+  }
 }
 
-langSwitch.addEventListener("click", () => {
-  setLanguage(currentLang === "he" ? "en" : "he");
-});
-
-menuToggle.addEventListener("click", () => {
-  const open = mainNav.classList.toggle("open");
-  menuToggle.setAttribute("aria-expanded", String(open));
-});
-
-mainNav.querySelectorAll("a").forEach((link) => {
-  link.addEventListener("click", () => {
-    mainNav.classList.remove("open");
-    menuToggle.setAttribute("aria-expanded", "false");
+if (langSwitch) {
+  langSwitch.addEventListener("click", () => {
+    setLanguage(currentLang === "he" ? "en" : "he");
   });
-});
+}
+
+if (menuToggle && mainNav) {
+  menuToggle.addEventListener("click", () => {
+    const open = mainNav.classList.toggle("open");
+    menuToggle.setAttribute("aria-expanded", String(open));
+  });
+
+  mainNav.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      mainNav.classList.remove("open");
+      menuToggle.setAttribute("aria-expanded", "false");
+    });
+  });
+}
 
 document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape") {
+  if (event.key === "Escape" && mainNav && menuToggle) {
     mainNav.classList.remove("open");
     menuToggle.setAttribute("aria-expanded", "false");
   }
