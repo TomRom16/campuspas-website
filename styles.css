@@ -1538,7 +1538,7 @@ html[dir="ltr"] .hero-overlay{
       rgba(7,24,39,.34) 68%,
       rgba(7,24,39,.58) 100%
     ),
-    url("porto-hero.jpg") !important;
+    url("porto-hero.jpg?v=3") !important;
   background-size:cover !important;
   background-position:center 58% !important;
   background-repeat:no-repeat !important;
