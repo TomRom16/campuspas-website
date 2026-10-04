@@ -50,3 +50,14 @@ document.addEventListener("keydown", (event) => {
     menuToggle.setAttribute("aria-expanded", "false");
   }
 });
+
+
+// Desktop dropdowns are hover-only: prevent trigger clicks from retaining focus.
+document.querySelectorAll(".nav-group-trigger").forEach((trigger) => {
+  trigger.addEventListener("click", (event) => {
+    if (window.matchMedia("(min-width: 1051px)").matches) {
+      event.preventDefault();
+      trigger.blur();
+    }
+  });
+});
