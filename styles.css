@@ -1137,3 +1137,78 @@ html[dir="ltr"] .hero-overlay {
     font-size:14px !important;
   }
 }
+
+
+/* Navigation interaction polish */
+@media(min-width:1051px){
+
+  /* Dropdowns open only while hovering */
+  .nav-group .nav-dropdown{
+    opacity:0;
+    visibility:hidden;
+    pointer-events:none;
+  }
+
+  .nav-group:hover .nav-dropdown{
+    opacity:1;
+    visibility:visible;
+    pointer-events:auto;
+  }
+
+  /* Clicking/focusing a trigger must not keep the dropdown open */
+  .nav-group:focus-within .nav-dropdown{
+    opacity:0;
+    visibility:hidden;
+    pointer-events:none;
+  }
+
+  .nav-group:hover:focus-within .nav-dropdown{
+    opacity:1;
+    visibility:visible;
+    pointer-events:auto;
+  }
+
+  /* Same underline animation for every top-level menu item */
+  .compact-nav > a,
+  .nav-group-trigger{
+    position:relative;
+  }
+
+  .compact-nav > a::after,
+  .nav-group-trigger::before{
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:2px;
+    height:2px;
+    background:var(--gold);
+    transform:scaleX(0);
+    transform-origin:center;
+    transition:transform .2s ease;
+  }
+
+  .compact-nav > a:hover::after,
+  .compact-nav > a:focus-visible::after,
+  .nav-group:hover > .nav-group-trigger::before,
+  .nav-group-trigger:focus-visible::before{
+    transform:scaleX(1);
+  }
+
+  /* Keep dropdown arrow separate from underline animation */
+  .nav-group-trigger::after{
+    content:"⌄";
+    font-size:11px;
+    margin-inline-start:6px;
+    opacity:.65;
+    position:static;
+    height:auto;
+    background:none;
+    transform:none;
+  }
+
+  /* Push English visually away from the menu to the viewport edge */
+  .header-language{
+    left:calc((100vw - 100%) / -2 + 28px) !important;
+  }
+}
