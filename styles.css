@@ -1240,3 +1240,63 @@ html[dir="ltr"] .hero-overlay {
     left:90px !important;
   }
 }
+
+
+/* Final header alignment + hero visibility */
+@media(min-width:1051px){
+  .header-main{
+    min-height:122px !important;
+    align-items:end !important;
+    padding-bottom:12px !important;
+  }
+
+  .brand-panel{
+    align-self:end !important;
+    min-height:auto !important;
+    padding-bottom:0 !important;
+    transform:translateY(2px);
+  }
+
+  .header-main > .main-nav,
+  .compact-nav{
+    align-self:end !important;
+    min-height:auto !important;
+    padding-top:0 !important;
+    padding-bottom:0 !important;
+    margin-bottom:0 !important;
+    gap:24px !important;
+  }
+
+  .compact-nav > a,
+  .nav-group-trigger{
+    font-size:15.5px !important;
+    line-height:1.2 !important;
+    padding:12px 0 10px !important;
+  }
+
+  .header-language{
+    left:20px !important;
+    top:auto !important;
+    bottom:14px !important;
+    transform:none !important;
+    font-size:15px !important;
+  }
+
+  .brand-copy strong{
+    font-size:19px !important;
+  }
+
+  .brand-copy span{
+    font-size:14px !important;
+  }
+}
+
+.hero-overlay{
+  background:
+    linear-gradient(90deg, rgba(12,28,44,.10), rgba(12,28,44,.48)),
+    linear-gradient(180deg, rgba(12,28,44,.04), rgba(12,28,44,.18)) !important;
+}
+
+.hero-image{
+  filter:saturate(1.06) contrast(1.03) brightness(1.06);
+}
