@@ -865,3 +865,70 @@ html[dir="ltr"] .hero-overlay {
 
   .header-main > .main-nav{top:84px;}
 }
+
+
+/* Header polish: remove grey brand box and move language switch to menu edge */
+.brand-panel{
+  background:transparent !important;
+  border-radius:0 !important;
+  padding:14px 0 !important;
+}
+
+.brand-copy{
+  align-items:center;
+  text-align:center;
+}
+
+.brand-copy strong,
+.brand-copy span{
+  text-align:center;
+}
+
+.header-main > .main-nav{
+  justify-content:center;
+}
+
+.nav-lang-switch{
+  order:999;
+  margin-inline-start:auto;
+  flex:0 0 auto;
+  align-self:flex-end;
+  margin-bottom:12px;
+  border:0;
+  background:transparent;
+  color:var(--blue);
+  font-weight:700;
+  font-size:14px;
+  cursor:pointer;
+  padding:8px 0;
+}
+
+.nav-lang-switch:hover,
+.nav-lang-switch:focus-visible{
+  text-decoration:underline;
+}
+
+@media(max-width:1050px){
+  .brand-panel{
+    padding:10px 0 !important;
+  }
+
+  .header-main > .main-nav{
+    padding-inline-start:16px;
+  }
+
+  .nav-lang-switch{
+    order:-999;
+    align-self:stretch;
+    margin:0 0 8px;
+    text-align:center;
+    border-bottom:1px solid var(--line);
+    padding:10px;
+  }
+}
+
+@media(max-width:650px){
+  .brand-panel{
+    padding:8px 0 !important;
+  }
+}
