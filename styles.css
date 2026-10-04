@@ -963,3 +963,19 @@ html[dir="ltr"] .hero-overlay {
     overflow-y:auto;
   }
 }
+
+
+/* Final desktop nav edge fix */
+@media(min-width:1051px){
+  .header-main > .main-nav{
+    padding-top:16px !important;
+    padding-right:0 !important;
+    padding-bottom:16px !important;
+    padding-left:105px !important;
+    box-sizing:border-box;
+  }
+
+  .nav-lang-switch{
+    left:18px !important;
+  }
+}
