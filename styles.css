@@ -1559,3 +1559,100 @@ html[dir="ltr"] .hero-overlay{
     background-position:center center !important;
   }
 }
+
+
+/* ===== FINAL CLEAN FIX v12 ===== */
+@media (min-width:1051px){
+  .header-main{
+    grid-template-columns:150px minmax(0,1fr) 430px !important;
+    gap:22px !important;
+    min-height:108px !important;
+    align-items:center !important;
+  }
+
+  .header-language{
+    grid-area:lang !important;
+    justify-self:center !important;
+    transform:translateY(4px) !important;
+  }
+
+  .compact-nav{
+    grid-area:nav !important;
+    gap:20px !important;
+    transform:translateY(4px) !important;
+  }
+
+  .compact-nav > a,
+  .nav-group-trigger{
+    font-size:15px !important;
+  }
+
+  .brand-panel{
+    grid-area:brand !important;
+    min-width:0 !important;
+    justify-content:flex-end !important;
+    gap:18px !important;
+    transform:translateY(4px) !important;
+  }
+
+  .brand-logo-art{
+    flex:0 0 150px !important;
+    width:150px !important;
+    height:76px !important;
+  }
+
+  .brand-copy{
+    min-width:200px !important;
+  }
+
+  .brand-copy strong,
+  .brand-copy span{
+    white-space:nowrap !important;
+  }
+}
+
+.hero{
+  min-height:650px !important;
+  background:#0c1c2c !important;
+}
+
+.hero-media{
+  position:absolute !important;
+  inset:0 !important;
+  width:100% !important;
+  height:100% !important;
+}
+
+.hero-image{
+  position:absolute !important;
+  inset:0 !important;
+  width:100% !important;
+  height:100% !important;
+  object-fit:cover !important;
+  object-position:center center !important;
+  max-width:none !important;
+  filter:none !important;
+}
+
+.hero-overlay{
+  position:absolute !important;
+  inset:0 !important;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(8,22,35,.06) 0%,
+      rgba(8,22,35,.10) 42%,
+      rgba(8,22,35,.34) 70%,
+      rgba(8,22,35,.58) 100%
+    ) !important;
+}
+
+.hero-content{
+  position:relative !important;
+  z-index:2 !important;
+  padding-block:72px !important;
+}
+
+.hero-card{
+  max-width:760px !important;
+}
