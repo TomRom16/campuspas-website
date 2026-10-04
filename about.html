@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=6">
+<link rel="stylesheet" href="styles.css?v=7">
 </head>
 <body>
 <a class="skip-link" href="#main">דילוג לתוכן</a>
@@ -27,24 +27,44 @@
       <span class="sr-only">תפריט</span>
     </button>
 
-    <nav class="main-nav" id="mainNav" aria-label="ניווט ראשי">
-      <a href="index.html" data-he="עמוד הבית" data-en="Home Page">עמוד הבית</a>
+    <nav class="main-nav compact-nav" id="mainNav" aria-label="ניווט ראשי">
+      <a href="index.html" data-he="עמוד הבית" data-en="Home">עמוד הבית</a>
+
+      <div class="nav-group">
+        <button class="nav-group-trigger" type="button" data-he="אזרחות פורטוגלית" data-en="Portuguese Citizenship">אזרחות פורטוגלית</button>
+        <div class="nav-dropdown">
+          <a href="why-campus.html" data-he="ליווי משפטי בפורטוגל" data-en="Legal Support in Portugal">ליווי משפטי בפורטוגל</a>
+          <a href="spouse-citizenship.html" data-he="אזרחות לבני זוג" data-en="Citizenship for Spouses">אזרחות לבני זוג</a>
+          <a href="children-citizenship.html" data-he="אזרחות לילדים" data-en="Citizenship for Children">אזרחות לילדים</a>
+          <a href="children-guide.html" data-he="מדריך אזרחות לילדים" data-en="Citizenship Guide for Children">מדריך אזרחות לילדים</a>
+        </div>
+      </div>
+
+      <div class="nav-group">
+        <button class="nav-group-trigger" type="button" data-he="שירותים בפורטוגל" data-en="Services in Portugal">שירותים בפורטוגל</button>
+        <div class="nav-dropdown">
+          <a href="civil-marriage.html" data-he="נישואים אזרחיים" data-en="Civil Marriage">נישואים אזרחיים</a>
+          <a href="real-estate.html" data-he="נדל״ן והשקעות" data-en="Real Estate and Investments">נדל״ן והשקעות</a>
+          <a href="relocation.html" data-he="רילוקיישן ושירותים" data-en="Relocation and Services">רילוקיישן ושירותים</a>
+          <a href="business.html" data-he="פתרונות עסקיים ובינלאומיים" data-en="Business and International Solutions">פתרונות עסקיים ובינלאומיים</a>
+        </div>
+      </div>
+
       <a href="about.html" data-he="אודות" data-en="About">אודות</a>
-      <a href="why-campus.html" data-he="עו״ד דרכון פורטוגלי וליווי משפטי בפורטוגל" data-en="Portuguese passport lawyer and legal support in Portugal">עו״ד דרכון פורטוגלי וליווי משפטי בפורטוגל</a>
-      <a href="spouse-citizenship.html" data-he="אזרחות לבני זוג" data-en="Citizenship for Spouses">אזרחות לבני זוג</a>
-      <a href="children-citizenship.html" data-he="אזרחות לילדים" data-en="Citizenship for Kids">אזרחות לילדים</a>
-      <a href="civil-marriage.html" data-he="נישואים אזרחיים בפורטוגל" data-en="Civil Marriage in Portugal">נישואים אזרחיים בפורטוגל</a>
-      <a href="real-estate.html" data-he="נדל״ן והשקעות בפורטוגל" data-en="Real Estate and Investments in Portugal">נדל״ן והשקעות בפורטוגל</a>
-      <a href="relocation.html" data-he="רילוקיישן ושירותים בפורטוגל" data-en="Relocation and Services in Portugal">רילוקיישן ושירותים בפורטוגל</a>
-      <a href="business.html" data-he="פתרונות עסקיים ושירותים בינלאומיים" data-en="Business Solutions and International Services">פתרונות עסקיים ושירותים בינלאומיים</a>
-      <a href="blog.html" data-he="מדריכים ומאמרים מקצועיים" data-en="Professional Guides and Articles">מדריכים ומאמרים מקצועיים</a>
-      <a href="children-guide.html" data-he="מדריך אזרחות פורטוגלית לילדים" data-en="Guide to Portuguese Citizenship for Children">מדריך אזרחות פורטוגלית לילדים</a>
-      <a href="recommendations.html" data-he="לקוחות ממליצים" data-en="Customer Recommendations">לקוחות ממליצים</a>
-      <a href="press.html" data-he="בתקשורת" data-en="In the Media">בתקשורת</a>
-      <a href="contact.html" data-he="יצירת קשר" data-en="Contact Us">יצירת קשר</a>
-    
-      <button class="nav-lang-switch" type="button" id="langSwitch" aria-label="Switch language">English</button>
+
+      <div class="nav-group">
+        <button class="nav-group-trigger" type="button" data-he="מידע ומאמרים" data-en="Information and Articles">מידע ומאמרים</button>
+        <div class="nav-dropdown">
+          <a href="blog.html" data-he="מדריכים ומאמרים מקצועיים" data-en="Professional Guides and Articles">מדריכים ומאמרים מקצועיים</a>
+          <a href="press.html" data-he="בתקשורת" data-en="In the Media">בתקשורת</a>
+        </div>
+      </div>
+
+      <a href="recommendations.html" data-he="לקוחות ממליצים" data-en="Testimonials">לקוחות ממליצים</a>
+      <a href="contact.html" data-he="יצירת קשר" data-en="Contact">יצירת קשר</a>
     </nav>
+
+    <button class="header-language" type="button" id="langSwitch" aria-label="Switch language">English</button>
   </div>
 </header>
 <main id="main" class="article-page">
