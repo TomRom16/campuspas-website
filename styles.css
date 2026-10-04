@@ -1212,3 +1212,31 @@ html[dir="ltr"] .hero-overlay {
     left:calc((100vw - 100%) / -2 + 28px) !important;
   }
 }
+
+
+/* Homepage hero image + English position refinement */
+.hero-media{
+  position:absolute;
+  inset:0;
+  overflow:hidden;
+}
+
+.hero-image{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center center;
+  display:block;
+}
+
+.hero-overlay{
+  background:
+    linear-gradient(90deg, rgba(12,28,44,.22), rgba(12,28,44,.78)),
+    linear-gradient(180deg, rgba(12,28,44,.12), rgba(12,28,44,.34)) !important;
+}
+
+@media(min-width:1051px){
+  .header-language{
+    left:90px !important;
+  }
+}
