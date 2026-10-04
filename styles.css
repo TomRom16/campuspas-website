@@ -2041,3 +2041,13 @@ img { max-width: 100%; display: block; }
     width: 118px;
   }
 }
+
+
+/* Hero supporting paragraph visibility v18 */
+.hero-card > p:not(.lead) {
+  color: rgba(255,255,255,.97);
+  font-weight: 600;
+  text-shadow:
+    0 2px 7px rgba(0,0,0,.55),
+    0 1px 2px rgba(0,0,0,.45);
+}
