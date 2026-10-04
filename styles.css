@@ -1464,3 +1464,98 @@ html[dir="ltr"] .hero-overlay{
     min-height:auto !important;
   }
 }
+
+
+/* ===== FINAL HEADER + HERO LAYOUT v12 ===== */
+@media (min-width:1051px){
+  .header-main{
+    width:min(calc(100% - 40px),1560px) !important;
+    grid-template-columns:150px minmax(0,1fr) 390px !important;
+    grid-template-areas:"lang nav brand" !important;
+    gap:20px !important;
+    min-height:108px !important;
+    align-items:center !important;
+    padding:0 !important;
+  }
+
+  .header-language{
+    grid-area:lang !important;
+    position:static !important;
+    transform:none !important;
+    justify-self:center !important;
+    align-self:center !important;
+    margin:6px 0 0 !important;
+    font-size:15px !important;
+  }
+
+  .compact-nav{
+    grid-area:nav !important;
+    transform:translateY(5px) !important;
+    gap:18px !important;
+    padding:0 !important;
+    min-height:0 !important;
+    overflow:visible !important;
+  }
+
+  .compact-nav > a,
+  .nav-group-trigger{
+    font-size:15px !important;
+    padding:12px 0 10px !important;
+  }
+
+  .brand-panel{
+    grid-area:brand !important;
+    transform:translateY(5px) !important;
+    min-height:0 !important;
+    padding:0 !important;
+    gap:14px !important;
+    justify-self:end !important;
+  }
+
+  .brand-logo-art{
+    width:145px !important;
+    height:74px !important;
+    flex-basis:145px !important;
+  }
+
+  .brand-copy strong{
+    font-size:18px !important;
+  }
+
+  .brand-copy span{
+    font-size:14px !important;
+  }
+}
+
+/* Use the user's Porto photo as the actual hero background */
+.hero{
+  min-height:650px !important;
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(7,24,39,.08) 0%,
+      rgba(7,24,39,.12) 40%,
+      rgba(7,24,39,.34) 68%,
+      rgba(7,24,39,.58) 100%
+    ),
+    url("porto-hero.jpg") !important;
+  background-size:cover !important;
+  background-position:center 58% !important;
+  background-repeat:no-repeat !important;
+}
+
+.hero-media,
+.hero-overlay{
+  display:none !important;
+}
+
+.hero-content{
+  position:relative !important;
+  z-index:2 !important;
+}
+
+@media (max-width:1050px){
+  .hero{
+    background-position:center center !important;
+  }
+}
