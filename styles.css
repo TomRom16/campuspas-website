@@ -1300,3 +1300,167 @@ html[dir="ltr"] .hero-overlay {
 .hero-image{
   filter:saturate(1.06) contrast(1.03) brightness(1.06);
 }
+
+
+/* ===== AUTHORITATIVE HEADER + HERO FIX v11 ===== */
+@media (min-width:1051px){
+  .header-main{
+    direction:ltr !important;
+    display:grid !important;
+    grid-template-columns:150px minmax(0,1fr) 360px !important;
+    grid-template-areas:"lang nav brand" !important;
+    align-items:center !important;
+    gap:14px !important;
+    min-height:108px !important;
+    padding:0 !important;
+  }
+
+  .header-language{
+    grid-area:lang !important;
+    position:static !important;
+    left:auto !important;
+    top:auto !important;
+    bottom:auto !important;
+    right:auto !important;
+    transform:translateY(5px) !important;
+    justify-self:center !important;
+    align-self:center !important;
+    margin:0 !important;
+    padding:8px 0 !important;
+    font-size:15px !important;
+    line-height:1 !important;
+    color:var(--blue) !important;
+    white-space:nowrap !important;
+  }
+
+  .header-main > .main-nav,
+  .compact-nav{
+    grid-area:nav !important;
+    direction:rtl !important;
+    position:relative !important;
+    display:flex !important;
+    flex-wrap:nowrap !important;
+    align-self:center !important;
+    align-items:center !important;
+    justify-content:center !important;
+    align-content:center !important;
+    gap:22px !important;
+    min-height:0 !important;
+    height:auto !important;
+    margin:0 !important;
+    padding:0 !important;
+    overflow:visible !important;
+    transform:translateY(5px) !important;
+  }
+
+  .compact-nav > a,
+  .nav-group-trigger{
+    font-size:15px !important;
+    line-height:1.2 !important;
+    padding:13px 0 11px !important;
+    margin:0 !important;
+    font-weight:700 !important;
+  }
+
+  .brand-panel{
+    grid-area:brand !important;
+    direction:rtl !important;
+    align-self:center !important;
+    justify-self:stretch !important;
+    min-height:0 !important;
+    height:auto !important;
+    padding:0 !important;
+    margin:0 !important;
+    transform:translateY(5px) !important;
+  }
+
+  .brand-logo-art{
+    flex:0 0 145px !important;
+    width:145px !important;
+    height:74px !important;
+  }
+
+  .brand-copy{
+    transform:none !important;
+  }
+
+  .brand-copy strong{
+    font-size:18px !important;
+  }
+
+  .brand-copy span{
+    font-size:14px !important;
+    margin-top:4px !important;
+  }
+}
+
+/* Make the Porto image fill the WHOLE hero */
+.hero{
+  min-height:650px !important;
+  position:relative !important;
+  overflow:hidden !important;
+  background:#0c1c2c !important;
+}
+
+.hero-media{
+  position:absolute !important;
+  inset:0 !important;
+  width:100% !important;
+  height:100% !important;
+  overflow:hidden !important;
+  z-index:0 !important;
+}
+
+.hero-image{
+  position:absolute !important;
+  inset:0 !important;
+  display:block !important;
+  width:100% !important;
+  height:100% !important;
+  max-width:none !important;
+  object-fit:cover !important;
+  object-position:center 52% !important;
+  filter:none !important;
+  transform:none !important;
+  image-rendering:auto !important;
+}
+
+.hero-overlay{
+  position:absolute !important;
+  inset:0 !important;
+  z-index:1 !important;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(9,24,38,.08) 0%,
+      rgba(9,24,38,.14) 40%,
+      rgba(9,24,38,.38) 68%,
+      rgba(9,24,38,.64) 100%
+    ) !important;
+}
+
+html[dir="ltr"] .hero-overlay{
+  background:
+    linear-gradient(
+      270deg,
+      rgba(9,24,38,.08) 0%,
+      rgba(9,24,38,.14) 40%,
+      rgba(9,24,38,.38) 68%,
+      rgba(9,24,38,.64) 100%
+    ) !important;
+}
+
+.hero-content{
+  position:relative !important;
+  z-index:2 !important;
+}
+
+.hero-card{
+  text-shadow:0 1px 12px rgba(0,0,0,.18);
+}
+
+@media(max-width:1050px){
+  .hero{
+    min-height:auto !important;
+  }
+}
