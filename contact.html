@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=20">
+<link rel="stylesheet" href="styles.css?v=24">
 </head>
 <body>
 <a class="skip-link" href="#main">דילוג לתוכן</a>
@@ -67,22 +67,77 @@
     <button class="header-language" type="button" id="langSwitch" aria-label="Switch language">English</button>
   </div>
 </header>
-<main id="main" class="article-page">
-  <section class="article-hero">
-    <div class="container"><span class="section-kicker">CAMPUS PAS</span><h1>יצירת קשר</h1></div>
-  </section>
-  <section class="section">
-    <article class="container article-content">
+<main id="main" class="contact-page-premium">
+  <section class="contact-page-hero">
+    <div class="container contact-page-hero-inner">
+      <span class="section-kicker">CAMPUS PAS</span>
+      <h1>יצירת קשר</h1>
       <p>לבדיקת התאמה ראשונית, שאלות בנושאי אזרחות, רילוקיישן, נדל״ן ושירותים בפורטוגל — נשמח לסייע.</p>
-      <div class="contact-card-grid">
-        <a class="contact-info-card" href="tel:036323303"><span>טלפון</span><strong>03-6323303</strong></a>
-        <a class="contact-info-card" href="tel:0522447888"><span>נייד / WhatsApp</span><strong>052-2447888</strong></a>
-        <a class="contact-info-card" href="mailto:info@campuseu.com"><span>אימייל</span><strong>info@campuseu.com</strong></a>
-        <div class="contact-info-card"><span>ישראל</span><strong>תבור 116, שוהם</strong></div>
-        <div class="contact-info-card"><span>פורטוגל</span><strong>Rua do Aleixo 259, Porto</strong></div>
+    </div>
+  </section>
+
+  <section class="contact-page-section">
+    <div class="container contact-page-layout">
+      <div class="contact-page-primary">
+        <div class="contact-page-heading">
+          <h2>דברו איתנו בדרך שהכי נוחה לכם</h2>
+          <p>טלפון, WhatsApp או מייל — בחרו את הדרך הנוחה לכם ונחזור אליכם בהתאם לנושא הפנייה ולזמינות הצוות.</p>
+        </div>
+
+        <div class="contact-page-methods">
+          <a href="tel:036323303" class="contact-method-card phone-card">
+            <span class="contact-method-icon">☎</span>
+            <span class="contact-method-copy">
+              <small>טלפון</small>
+              <strong>03-6323303</strong>
+              <em>לשיחה מהירה ובדיקת התאמה ראשונית</em>
+            </span>
+            <span class="contact-method-arrow">←</span>
+          </a>
+
+          <a href="https://wa.me/972522447888" target="_blank" rel="noopener" class="contact-method-card whatsapp-card">
+            <span class="contact-method-icon whatsapp-method-icon">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp">
+            </span>
+            <span class="contact-method-copy">
+              <small>WhatsApp</small>
+              <strong>052-2447888</strong>
+              <em>שלחו לנו הודעה ישירה</em>
+            </span>
+            <span class="contact-method-arrow">←</span>
+          </a>
+
+          <a href="mailto:info@campuseu.com" class="contact-method-card email-card">
+            <span class="contact-method-icon">✉</span>
+            <span class="contact-method-copy">
+              <small>אימייל</small>
+              <strong>info@campuseu.com</strong>
+              <em>למסמכים ולפניות מפורטות</em>
+            </span>
+            <span class="contact-method-arrow">←</span>
+          </a>
+        </div>
       </div>
-      <p>ניתן לפנות אלינו ונחזור אליכם בהתאם לנושא הפנייה ולזמינות הצוות.</p>
-    </article>
+
+      <aside class="contact-page-side">
+        <div class="contact-location-card">
+          <span class="contact-location-label">ישראל</span>
+          <h3>Campus Pas</h3>
+          <p>תבור 116, שוהם</p>
+        </div>
+
+        <div class="contact-location-card">
+          <span class="contact-location-label">פורטוגל</span>
+          <h3>Campus EU</h3>
+          <p>Rua do Aleixo 259, Porto</p>
+        </div>
+
+        <div class="contact-note-card">
+          <strong>נשמח לעזור</strong>
+          <p>שלחו לנו הודעה קצרה עם נושא הפנייה והצוות יחזור אליכם בדרך המתאימה.</p>
+        </div>
+      </aside>
+    </div>
   </section>
 </main>
 <footer class="site-footer">
