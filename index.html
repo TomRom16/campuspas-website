@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=22" />
+  <link rel="stylesheet" href="styles.css?v=23" />
 </head>
 <body>
   <a class="skip-link" href="#main">דילוג לתוכן</a>
@@ -185,12 +185,29 @@
           </h2>
         </div>
 
-        <div class="contact-actions">
-          <a href="tel:036323303" class="contact-button">
-            <span>03-6323303</span>
+        <div class="contact-actions contact-actions-rich">
+          <a href="tel:036323303" class="contact-button contact-phone-primary" aria-label="התקשרו ל-03-6323303">
+            <span class="contact-action-icon" aria-hidden="true">☎</span>
+            <span class="contact-action-copy">
+              <small data-he="טלפון" data-en="Phone">טלפון</small>
+              <strong>03-6323303</strong>
+            </span>
           </a>
-          <a href="tel:0522447888" class="contact-button secondary">
-            <span>052-2447888</span>
+
+          <a href="https://wa.me/972522447888" class="contact-button contact-whatsapp" target="_blank" rel="noopener" aria-label="שלחו לנו הודעה ב-WhatsApp">
+            <span class="contact-action-icon" aria-hidden="true">◉</span>
+            <span class="contact-action-copy">
+              <small data-he="WhatsApp" data-en="WhatsApp">WhatsApp</small>
+              <strong data-he="שלחו לנו הודעה" data-en="Message us">שלחו לנו הודעה</strong>
+            </span>
+          </a>
+
+          <a href="mailto:info@campuseu.com" class="contact-button contact-email" aria-label="שלחו מייל ל-info@campuseu.com">
+            <span class="contact-action-icon" aria-hidden="true">✉</span>
+            <span class="contact-action-copy">
+              <small data-he="אימייל" data-en="Email">אימייל</small>
+              <strong>info@campuseu.com</strong>
+            </span>
           </a>
         </div>
       </div>
