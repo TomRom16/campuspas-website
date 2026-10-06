@@ -2197,3 +2197,110 @@ img { max-width: 100%; display: block; }
   object-fit:contain !important;
   object-position:center center;
 }
+
+
+/* Contact panel upgrade v23 */
+.contact-panel{
+  grid-template-columns:1.1fr .9fr;
+  gap:48px;
+}
+
+.contact-actions-rich{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:14px;
+}
+
+.contact-actions-rich .contact-button{
+  min-height:74px;
+  padding:0 18px;
+  border-radius:16px;
+  justify-content:flex-start;
+  gap:14px;
+  text-align:start;
+  direction:rtl;
+  box-shadow:0 10px 24px rgba(0,0,0,.10);
+  transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease, background .2s ease;
+}
+
+.contact-actions-rich .contact-button:hover{
+  transform:translateY(-2px);
+  box-shadow:0 16px 32px rgba(0,0,0,.16);
+}
+
+.contact-action-icon{
+  width:42px;
+  height:42px;
+  border-radius:50%;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  flex:0 0 42px;
+  font-size:20px;
+  font-weight:800;
+  background:rgba(12,28,44,.08);
+  color:var(--navy);
+}
+
+.contact-action-copy{
+  display:flex;
+  flex-direction:column;
+  gap:2px;
+  min-width:0;
+}
+
+.contact-action-copy small{
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:.06em;
+  opacity:.72;
+}
+
+.contact-action-copy strong{
+  font-size:19px;
+  line-height:1.15;
+  overflow-wrap:anywhere;
+}
+
+.contact-phone-primary{
+  background:#fff;
+  color:var(--navy);
+}
+
+.contact-whatsapp{
+  background:#25D366;
+  color:#082816;
+  border:1px solid rgba(255,255,255,.10);
+}
+
+.contact-whatsapp .contact-action-icon{
+  background:rgba(255,255,255,.28);
+  color:#082816;
+}
+
+.contact-email{
+  background:transparent;
+  color:#fff;
+  border:1px solid rgba(255,255,255,.28);
+}
+
+.contact-email .contact-action-icon{
+  background:rgba(255,255,255,.10);
+  color:#fff;
+}
+
+@media(max-width:1050px){
+  .contact-panel{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:760px){
+  .contact-actions-rich .contact-button{
+    min-height:68px;
+  }
+
+  .contact-action-copy strong{
+    font-size:17px;
+  }
+}
